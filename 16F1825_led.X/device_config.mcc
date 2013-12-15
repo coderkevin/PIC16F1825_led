@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration device="PIC16F1825">
+    <managers>
+        <manager name="System">
+            <initializer comment="" name="InitializerDefault">
+                <setting name="SPLLEN" option="disabled"/>
+                <setting name="SCS" option="INTOSC"/>
+                <setting name="IRCF" option="500KHz_MF"/>
+                <setting name="OSTS" option="intosc"/>
+                <setting name="HFIOFR" option="disabled"/>
+                <setting name="HFIOFS" option="not0.5percent_acc"/>
+                <setting name="PLLR" option="disabled"/>
+                <setting name="MFIOFR" option="disabled"/>
+                <setting name="T1OSCR" option="disabled"/>
+                <setting name="LFIOFR" option="disabled"/>
+                <setting name="HFIOFL" option="not2percent_acc"/>
+                <setting name="OSCTUNE" option="0x0"/>
+                <additionalSetting name="extclk" option="1.0 MHz"/>
+            </initializer>
+            <setting name="FOSC" option="INTOSC"/>
+            <setting name="WDTE" option="OFF"/>
+            <setting name="PWRTE" option="OFF"/>
+            <setting name="MCLRE" option="ON"/>
+            <setting name="CP" option="OFF"/>
+            <setting name="CPD" option="OFF"/>
+            <setting name="BOREN" option="ON"/>
+            <setting name="CLKOUTEN" option="OFF"/>
+            <setting name="IESO" option="ON"/>
+            <setting name="FCMEN" option="ON"/>
+            <setting name="WRT" option="OFF"/>
+            <setting name="PLLEN" option="ON"/>
+            <setting name="STVREN" option="ON"/>
+            <setting name="BORV" option="LO"/>
+            <setting name="LVP" option="OFF"/>
+            <file checksum="2796022328" modified="false" name="mcc.c" path="CM_Generated_Files/mcc.c"/>
+            <file checksum="600856632" modified="false" name="mcc.h" path="CM_Generated_Files/mcc.h"/>
+        </manager>
+        <manager name="Pin Manager">
+            <file checksum="4168616862" modified="false" name="pin_manager.c" path="CM_Generated_Files/pin_manager.c"/>
+            <file checksum="667322081" modified="false" name="pin_manager.h" path="CM_Generated_Files/pin_manager.h"/>
+        </manager>
+    </managers>
+    <modules>
+        <module mode="GPIO" name="GPIO" type="GPIO">
+            <resource customName="IO_RC0" digital="true" direction="false" name="RC0" start="false" type="pin" wpu="false"/>
+            <resource customName="IO_RC1" digital="true" direction="false" name="RC1" start="true" type="pin" wpu="false"/>
+        </module>
+    </modules>
+</configuration>
