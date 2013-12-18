@@ -1,4 +1,18 @@
+#-------------------
+# MPLAB built files
+#-------------------
+/16F1825_led.X/nbproject/private/private.xml
 /16F1825_led.X/build
 /16F1825_led.X/dist
 funclist
 l.obj
+
+#--------------------
+# OS generated files
+#--------------------
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
